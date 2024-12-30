@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .icon {
+        display: flex;
+        gap: 20px;
+
+        .fa-shopping-basket:hover, .fa-heart:hover {
+            cursor: pointer;
+        }
+
+        i {
+            .number {
+                position: absolute;
+                margin-top: -30px;
+                margin-left: -10px;
+                background-color: rgba(185, 9, 9, 0.7);
+                border-radius: 100%;
+                width: 20px;
+                height: 20px;
+                color: white;
+                font-size: 14pt;
+                text-align: center;
+                display: none;
+            }
+        }
+    }
+}
+
+#box-container {
+    display: none;
+    
+    .listbox {
+        padding: 20px;
+        width: 100%;
+        height: 200px;
+        font-size: 12pt;
+        background-color: #474747;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+    
+        li {
+            width: 170px;
+            height: 40px;
+            text-align: center;
+            align-content: center;
+            background-color: #333;
+            border-radius: 5px;
+        }
+    }
+}
+
+.list-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    .listitem {
+        width: 300px;
+        height: 150px;
+        background-color: #474747;
+        border-radius: 10px;
+        padding: 20px;
+        align-content: center;
+        transition: 0.4s ease;
+    
+        h3 {
+            font-size: 21pt;
+        }
+    
+        p {
+            margin-top: 10px;
+            font-size: 14pt;
+        }
+    
+        .product {
+            display: flex;
+            margin-top: 10px;
+            font-size: 21px;
+            justify-content: end;
+            gap: 20px;
+    
+            .fa-shopping-basket:hover, .fa-heart:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .listitem:hover {
+        background-color: rgb(114, 112, 112);
+    }
+}
